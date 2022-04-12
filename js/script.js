@@ -1,8 +1,11 @@
 
 $(".search-button").click(function() {
-let UserInput = $("input").val() ||"puppies" ;
-let ApiUrl = `https://api.giphy.com/v1/gifs/search?q=${UserInput}&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1`
-console.log(UserInput)
+  
+  let UserInput = $("input").val() ||"puppies" ;
+  let ApiUrl = `https://api.giphy.com/v1/gifs/search?q=${UserInput}&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1`
+  let RandomNum = Math.random();
+  RandomNum = Math.floor(RandomNum)
+  
   fetch(ApiUrl)
     .then(function(response) {
       return response.json();

@@ -1,6 +1,6 @@
 
 $(".search-button").click(function() {
-let UserInput = $("input").val();
+let UserInput = $("input").val() ||"puppies" ;
 let ApiUrl = `https://api.giphy.com/v1/gifs/search?q=${UserInput}&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1`
 console.log(UserInput)
   fetch(ApiUrl)

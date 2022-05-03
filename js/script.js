@@ -14,9 +14,10 @@ $(".search-button").click(function() {
     
     RanGenNum = Math.floor(Math.random() * data["data"].length)
     $(".main").append(`${data["data"][RanGenNum]["images"]["original"]["url"]}`)
-    
     $(".main").html(`<img src ="${data["data"][RanGenNum]["images"]["original"]["url"]}">`);
-    
+  })
+  $(".main").click(function() {
+      $(".main")
   })
 
 });

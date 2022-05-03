@@ -53,18 +53,18 @@ In this unit, you will create a Giphy App. The Giphy App will take a search term
 
 ### Wrap
 
-- [ ] Commit your changes!
+- [x] Commit your changes!
 
 ## Day 3
 
 ### Day 3 Goal 1: Randomize the gif that is displayed
 
-- [ ] Declare a variable that stores a random number from 0 to the total number of items (different gifs) in the response
-- [ ] Update the request URL in your fetch request to display a random gif onto the screen
+- [x] Declare a variable that stores a random number from 0 to the total number of items (different gifs) in the response
+- [x] Update the request URL in your fetch request to display a random gif onto the screen
 
 ### Wrap
 
-- [ ] Commit your changes!
+- [x] Commit your changes!
 
 ### Day 3 Goal 2: Add a project extension
 

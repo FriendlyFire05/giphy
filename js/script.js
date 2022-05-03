@@ -3,8 +3,7 @@ $(".search-button").click(function() {
   
   let UserInput = $("input").val() ||"puppies" ;
   let ApiUrl = `https://api.giphy.com/v1/gifs/search?q=${UserInput}&rating=pg&api_key=tTVMCPwEb1NapUWHla1pBNt4jKlfEqo1`
-  let RandomNum = Math.random();
-  RandomNum = Math.floor(RandomNum)
+  let RanGenNum = 0
   
   fetch(ApiUrl)
     .then(function(response) {
@@ -13,8 +12,10 @@ $(".search-button").click(function() {
     .then(function(data) {
       console.log(data["data"][0])
     
-    $(".main").append(`${data["data"][0]["images"]["original"]["url"]}`)
-    $(".main").html(`<img src ="${data["data"][0]["images"]["original"]["url"]}">`);
+    RanGenNum = Math.floor(Math.random() * data["data"].length)
+    $(".main").append(`${data["data"][RanGenNum]["images"]["original"]["url"]}`)
+    
+    $(".main").html(`<img src ="${data["data"][RanGenNum]["images"]["original"]["url"]}">`);
     
   })
 
